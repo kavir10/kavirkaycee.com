@@ -7,7 +7,7 @@
  * places to add some flare.
  */
 
-.notion-header {
+ .notion-header {
   position: -webkit-relative;
   position: relative; }
 
@@ -342,7 +342,9 @@ font-size: 0.9em;
 .notion-h1,
 .notion-h2,
 .notion-h3 {
+  margin-top: 1em;
   margin-bottom: 0.25em;
+  padding: 1px 1px;
 }
 
 .notion-callout {
@@ -350,7 +352,8 @@ font-size: 0.9em;
 }
 
 .notion-hr {
-  margin: 2em 0;
+  margin: 0.25em 0;
+  border-color: #121212;
 }
 
 @media only screen and (max-width: 920px) {
@@ -411,6 +414,12 @@ font-size: 0.9em;
   display: none;
 }
 
+.notion-page-cover-wrapper.no-cover,
+.notion-page-cover-wrapper.no-cover span,
+.notion-page-cover-wrapper.no-cover img {
+  display: none !important;
+}
+
 .notion-page-cover-wrapper {
   box-shadow: 2px 1px 8px 1px hsla(0, 0%, 63.5%, 0.1);
 }
@@ -426,6 +435,15 @@ font-size: 0.9em;
 .notion-block-ab9a258d6cf444f3bb40dc2600feae91 .notion-page-link {
   justify-content: center;
   padding: 2em;
+}
+
+.notion-page-link {
+  text-decoration: none !important; /* Prevents underline */
+}
+
+.notion-page-link:focus,
+.notion-page-link:hover {
+  text-decoration: none !important; /* Ensures no underline appears on hover or focus */
 }
 
 .notion-code {
@@ -448,6 +466,7 @@ font-size: 0.9em;
 
 .notion-link:focus,
 .notion-link:hover {
+  text-decoration: underline !important;
   border-bottom-color: transparent;
 
   background-image: linear-gradient(90.68deg, #b439df 0.26%, #e5337e 102.37%);
@@ -598,5 +617,9 @@ font-size: 0.9em;
 }
 
 .notion-block-260baa77f1e1428b97fb14ac99c7c385 {
+  display: none;
+}
+
+.notion-block-53227241f3d54045ab5992f52c8340a6{
   display: none;
 }
