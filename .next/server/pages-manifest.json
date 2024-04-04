@@ -1,6 +1,13 @@
 {
-  "/_app": "pages/_app.js",
-  "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/[pageId]": "pages/[pageId].js"
+  "/404": "pages/404.html",
+  "/_app": "pages/_app.js",
+  "/api/search-notion": "pages/api/search-notion.js",
+  "/api/social-image": "pages/api/social-image.js",
+  "/_error": "pages/_error.js",
+  "/": "pages/index.js",
+  "/robots.txt": "pages/robots.txt.js",
+  "/feed": "pages/feed.js",
+  "/[pageId]": "pages/[pageId].js",
+  "/sitemap.xml": "pages/sitemap.xml.js"
 }

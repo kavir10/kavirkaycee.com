@@ -1,0 +1,29 @@
+"use strict";
+exports.id = 318;
+exports.ids = [318];
+exports.modules = {
+
+/***/ 8318:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "T": () => (/* binding */ i)
+/* harmony export */ });
+/* harmony import */ var react_dom_server__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1736);
+/* harmony import */ var react_dom_server__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_dom_server__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var deepmerge__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(6330);
+/* harmony import */ var deepmerge__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(deepmerge__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var twemoji__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(1345);
+/* harmony import */ var twemoji__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(twemoji__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var puppeteer_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(1107);
+/* harmony import */ var puppeteer_core__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(puppeteer_core__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var chrome_aws_lambda__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(7893);
+/* harmony import */ var chrome_aws_lambda__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(chrome_aws_lambda__WEBPACK_IMPORTED_MODULE_4__);
+function s(){return s=Object.assign||function(e){for(var r=1;r<arguments.length;r++){var t=arguments[r];for(var n in t)Object.prototype.hasOwnProperty.call(t,n)&&(e[n]=t[n])}return e},s.apply(this,arguments)}var a=["body","query"];function i(i){var m=(i=deepmerge__WEBPACK_IMPORTED_MODULE_1___default()({contentType:i.type?"image/"+i.type:"image/png",strategy:"query",cacheControl:"max-age 3600, must-revalidate",width:1200,height:630,type:"png",quality:90,dev:{inspectHtml:!0,errorsInResponse:!0}},i)).template,l=m.html,p=m.react,h=i.cacheControl,v=i.strategy,y=i.contentType,f=i.width,d=i.height,g=i.type,P=i.quality,w=i.dev,b=w.inspectHtml,q=w.errorsInResponse;if(l&&p)throw new Error("Ambigious template provided. You must provide either `html` or `react` template.");if(!l&&!p)throw new Error("No template was provided.");var j,C="production",x=function(){var e=[].slice.call(arguments);return function(){try{return Promise.resolve(e.reduce(function(e,r){try{return Promise.resolve(e).then(function(e){return Promise.resolve(r(e))})}catch(e){return Promise.reject(e)}},Promise.resolve({envMode:"production"})))}catch(e){return Promise.reject(e)}}}(u,(j={width:f,height:d},function(e){try{var r=function(r){return Promise.resolve(puppeteer_core__WEBPACK_IMPORTED_MODULE_3___default().launch(u?r:{args:m,executablePath:r,headless:(chrome_aws_lambda__WEBPACK_IMPORTED_MODULE_4___default().headless)})).then(function(r){return Promise.resolve(r.newPage()).then(function(r){return Promise.resolve(r.setViewport(j)).then(function(){return s({},e,{page:r})})})})},t=e.page,a=e.envMode,i=e.executable;if(t)return Promise.resolve(s({},e,{page:t}));var u=!c(a),m=u||(chrome_aws_lambda__WEBPACK_IMPORTED_MODULE_4___default().args);return Promise.resolve(u?r({args:[],executablePath:i,headless:!0}):Promise.resolve((chrome_aws_lambda__WEBPACK_IMPORTED_MODULE_4___default().executablePath)).then(r))}catch(e){return Promise.reject(e)}}),function(e){var r=e.inspectHtml,t=e.type,n=e.quality;return function(e){var o=e.page,a=e.envMode;return s({},e,{createImage:function(e){try{return Promise.resolve(o.setContent(e)).then(function(){return Promise.resolve(!c(a)&&r?o.content():o.screenshot({type:t,encoding:"binary",quality:n}))})}catch(e){return Promise.reject(e)}}})}}({inspectHtml:b,type:g,quality:P}));return function(r,n){try{!function(e,r,t,n){var o={body:function(){var e=t.method,o=t.headers["content-type"];if("POST"!==e&&"application/json"!==o){var s="Strategy is set to `body` so parameters must be passed by POST request and JSON payload. Current method: "+e+" and current content type: "+o;throw r&&n.json({message:s}),new Error(s)}},query:function(){var e=t.method;if("GET"!==e){var o="Strategy is set to `query` so parameters must be passed by GET request and query params. Current method: "+e;throw r&&n.json({message:o}),new Error(o)}}},s=o[e];if(!s)throw new Error("Unknown strategy provided. Possible values: "+a);s()}(v,!c(C)&&q,r,n);var o=JSON.parse(JSON.stringify("query"===v?r.query:r.body,function(e,r){return r&&"object"==typeof r?r:""+r}));return Promise.resolve(x()).then(function(r){function a(a){function i(o){var s=l&&!p?o:(0,react_dom_server__WEBPACK_IMPORTED_MODULE_0__.renderToStaticMarkup)(o);n.setHeader("Content-Type",!c(C)&&b?"text/html":y),n.setHeader("Cache-Control",h);var a=n.write;return Promise.resolve(r.createImage(function(e){return"<style>\n    .emoji {\n      height: 1em;\n      width: 1em;\n      margin: 0 .05em 0 .1em;\n      vertical-align: -0.1em;\n    }\n  </style>"+twemoji__WEBPACK_IMPORTED_MODULE_2___default().parse(e,{folder:"svg",ext:".svg"})}(s))).then(function(e){a.call(n,e),n.end()})}return l&&!p?i(l&&!p?a:p(s({},o))):Promise.resolve(l&&!p?a:p(s({},o))).then(i)}return l&&!p?Promise.resolve(l&&!p?l(s({},o)):0).then(a):a(l&&!p?l(s({},o)):0)})}catch(e){return Promise.reject(e)}}}function c(e){return"production"===e||"staging"===e}function u(e){return s({},e,{executable:"win32"===process.platform?"C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe":"linux"===process.platform?"/usr/bin/google-chrome":"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"})}
+//# sourceMappingURL=next-api-og-image.module.js.map
+
+
+/***/ })
+
+};
+;
