@@ -139,7 +139,7 @@
 
 .notion-title {
   margin-bottom: 5px;
-  font-family: Inter;
+  /* font-family: Inter; */
 }
 
 .notion-property.notion-property-last_edited_time, .notion-property.notion-property-date {
