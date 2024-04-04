@@ -692,6 +692,25 @@
   );
 }
 
+.page-with-cover .notion-page-cover-wrapper {
+  display: block; /* Ensure it's visible */
+}
+
+.index-page .notion-page-cover-wrapper,
+.no-cover-page .notion-page-cover-wrapper {
+  display: none; /* Hide the cover image */
+}
+
+.notion-page-cover-wrapper {
+  min-height: 200px; /* Adjust based on your design needs */
+}
+
+/* For pages without cover images, to not occupy space */
+.index-page .notion-page-cover-wrapper,
+.no-cover-page .notion-page-cover-wrapper {
+  min-height: 0; /* No space occupied */
+}
+
 /* disable highlighting in dark mode */
 .dark-mode .notion-red_background,
 .dark-mode .notion-pink_background,

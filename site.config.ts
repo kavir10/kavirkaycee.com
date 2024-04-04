@@ -10,7 +10,7 @@ export default siteConfig({
 
   // basic site info (required)
   name: 'Kavir Kaycee',
-  domain: 'x',
+  domain: 'kavirkaycee.com',
   author: 'Kavir Kaycee',
   seotitle: 'Kavir Kaycee | Product Management',
 
