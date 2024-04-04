@@ -147,7 +147,7 @@
 } 
 
 .dark-mode {
-  background-color: #22252A !important
+  bg-color: #22252A !important
 }
 
 .dark-mode .notion-header .notion-nav-header {
