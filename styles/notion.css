@@ -558,7 +558,6 @@
 }
 
 .notion-page-link {
-  background-color: #333333;
   border-bottom: 0;
   text-decoration: none !important; /* Prevents underline */
 }
