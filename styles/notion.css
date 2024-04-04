@@ -147,11 +147,13 @@
 } 
 
 .dark-mode {
-  bg-color: #22252A !important
+  background-color: #2f3437 !important
+  /* background-color: #22252A !important */
 }
 
 .dark-mode .notion-header .notion-nav-header {
-  background: #22252A !important;
+  background: #2f3437 !important;
+  /* background: #22252A !important; */
   /* display: none;
   margin-top: 60px; */
 }

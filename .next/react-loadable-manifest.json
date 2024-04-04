@@ -1,222 +1,218 @@
 {
   "../components/NotionPage.tsx -> prismjs/components/prism-bash.js": {
-    "id": 7874,
+    "id": "../components/NotionPage.tsx -> prismjs/components/prism-bash.js",
     "files": [
-      "static/chunks/7874.4b03c16c3bf93a64.js"
+      "static/chunks/node_modules_prismjs_components_prism-bash_js.js"
     ]
   },
   "../components/NotionPage.tsx -> prismjs/components/prism-c.js": {
-    "id": 4279,
+    "id": "../components/NotionPage.tsx -> prismjs/components/prism-c.js",
     "files": [
-      "static/chunks/4279.871bcee6fb2b782b.js"
+      "static/chunks/node_modules_prismjs_components_prism-c_js.js"
     ]
   },
   "../components/NotionPage.tsx -> prismjs/components/prism-coffeescript.js": {
-    "id": 6213,
+    "id": "../components/NotionPage.tsx -> prismjs/components/prism-coffeescript.js",
     "files": [
-      "static/chunks/6213.0c84a81bc62ca57f.js"
+      "static/chunks/node_modules_prismjs_components_prism-coffeescript_js.js"
     ]
   },
   "../components/NotionPage.tsx -> prismjs/components/prism-cpp.js": {
-    "id": 2731,
+    "id": "../components/NotionPage.tsx -> prismjs/components/prism-cpp.js",
     "files": [
-      "static/chunks/2731.777b2ab6b516ce20.js"
+      "static/chunks/node_modules_prismjs_components_prism-cpp_js.js"
     ]
   },
   "../components/NotionPage.tsx -> prismjs/components/prism-csharp.js": {
-    "id": 9016,
+    "id": "../components/NotionPage.tsx -> prismjs/components/prism-csharp.js",
     "files": [
-      "static/chunks/9016.2e94e763452b461b.js"
+      "static/chunks/node_modules_prismjs_components_prism-csharp_js.js"
     ]
   },
   "../components/NotionPage.tsx -> prismjs/components/prism-diff.js": {
-    "id": 728,
+    "id": "../components/NotionPage.tsx -> prismjs/components/prism-diff.js",
     "files": [
-      "static/chunks/728.f8815de8eeced635.js"
+      "static/chunks/node_modules_prismjs_components_prism-diff_js.js"
     ]
   },
   "../components/NotionPage.tsx -> prismjs/components/prism-docker.js": {
-    "id": 7158,
+    "id": "../components/NotionPage.tsx -> prismjs/components/prism-docker.js",
     "files": [
-      "static/chunks/7158.c6cdf3fcba3c3a50.js"
+      "static/chunks/node_modules_prismjs_components_prism-docker_js.js"
     ]
   },
   "../components/NotionPage.tsx -> prismjs/components/prism-git.js": {
-    "id": 9787,
+    "id": "../components/NotionPage.tsx -> prismjs/components/prism-git.js",
     "files": [
-      "static/chunks/9787.fda5ad06d96808fb.js"
+      "static/chunks/node_modules_prismjs_components_prism-git_js.js"
     ]
   },
   "../components/NotionPage.tsx -> prismjs/components/prism-go.js": {
-    "id": 7046,
+    "id": "../components/NotionPage.tsx -> prismjs/components/prism-go.js",
     "files": [
-      "static/chunks/7046.4f8fbcb6e166b7ac.js"
+      "static/chunks/node_modules_prismjs_components_prism-go_js.js"
     ]
   },
   "../components/NotionPage.tsx -> prismjs/components/prism-graphql.js": {
-    "id": 7117,
+    "id": "../components/NotionPage.tsx -> prismjs/components/prism-graphql.js",
     "files": [
-      "static/chunks/7117.27019b484ceb204d.js"
+      "static/chunks/node_modules_prismjs_components_prism-graphql_js.js"
     ]
   },
   "../components/NotionPage.tsx -> prismjs/components/prism-handlebars.js": {
-    "id": 110,
+    "id": "../components/NotionPage.tsx -> prismjs/components/prism-handlebars.js",
     "files": [
-      "static/chunks/110.5f37497c60ab1daf.js"
+      "static/chunks/node_modules_prismjs_components_prism-handlebars_js.js"
     ]
   },
   "../components/NotionPage.tsx -> prismjs/components/prism-java.js": {
-    "id": 2503,
+    "id": "../components/NotionPage.tsx -> prismjs/components/prism-java.js",
     "files": [
-      "static/chunks/2503.790514c529c0bdb2.js"
+      "static/chunks/node_modules_prismjs_components_prism-java_js.js"
     ]
   },
   "../components/NotionPage.tsx -> prismjs/components/prism-js-templates.js": {
-    "id": 8885,
+    "id": "../components/NotionPage.tsx -> prismjs/components/prism-js-templates.js",
     "files": [
-      "static/chunks/8885.e1c55cdda2db46c9.js"
+      "static/chunks/node_modules_prismjs_components_prism-js-templates_js.js"
     ]
   },
   "../components/NotionPage.tsx -> prismjs/components/prism-less.js": {
-    "id": 7802,
+    "id": "../components/NotionPage.tsx -> prismjs/components/prism-less.js",
     "files": [
-      "static/chunks/7802.cd117b864d01e1e6.js"
+      "static/chunks/node_modules_prismjs_components_prism-less_js.js"
     ]
   },
   "../components/NotionPage.tsx -> prismjs/components/prism-makefile.js": {
-    "id": 8443,
+    "id": "../components/NotionPage.tsx -> prismjs/components/prism-makefile.js",
     "files": [
-      "static/chunks/8443.cfc8d79f82682ea4.js"
+      "static/chunks/node_modules_prismjs_components_prism-makefile_js.js"
     ]
   },
   "../components/NotionPage.tsx -> prismjs/components/prism-markdown.js": {
-    "id": 4064,
+    "id": "../components/NotionPage.tsx -> prismjs/components/prism-markdown.js",
     "files": [
-      "static/chunks/4064.182f33620f73fc6c.js"
+      "static/chunks/node_modules_prismjs_components_prism-markdown_js.js"
     ]
   },
   "../components/NotionPage.tsx -> prismjs/components/prism-markup-templating.js": {
-    "id": 6854,
+    "id": "../components/NotionPage.tsx -> prismjs/components/prism-markup-templating.js",
     "files": [
-      "static/chunks/6854.e3b6430b0680d6bc.js"
+      "static/chunks/node_modules_prismjs_components_prism-markup-templating_js.js"
     ]
   },
   "../components/NotionPage.tsx -> prismjs/components/prism-markup.js": {
-    "id": 4335,
+    "id": "../components/NotionPage.tsx -> prismjs/components/prism-markup.js",
     "files": [
-      "static/chunks/4335.273013fae1c4781b.js"
+      "static/chunks/node_modules_prismjs_components_prism-markup_js.js"
     ]
   },
   "../components/NotionPage.tsx -> prismjs/components/prism-objectivec.js": {
-    "id": 1426,
+    "id": "../components/NotionPage.tsx -> prismjs/components/prism-objectivec.js",
     "files": [
-      "static/chunks/1426.c08ec04b186317d2.js"
+      "static/chunks/node_modules_prismjs_components_prism-objectivec_js.js"
     ]
   },
   "../components/NotionPage.tsx -> prismjs/components/prism-ocaml.js": {
-    "id": 4371,
+    "id": "../components/NotionPage.tsx -> prismjs/components/prism-ocaml.js",
     "files": [
-      "static/chunks/4371.31e35d75670b35bf.js"
+      "static/chunks/node_modules_prismjs_components_prism-ocaml_js.js"
     ]
   },
   "../components/NotionPage.tsx -> prismjs/components/prism-python.js": {
-    "id": 366,
+    "id": "../components/NotionPage.tsx -> prismjs/components/prism-python.js",
     "files": [
-      "static/chunks/366.33fa535f8fc0efad.js"
+      "static/chunks/node_modules_prismjs_components_prism-python_js.js"
     ]
   },
   "../components/NotionPage.tsx -> prismjs/components/prism-reason.js": {
-    "id": 8439,
+    "id": "../components/NotionPage.tsx -> prismjs/components/prism-reason.js",
     "files": [
-      "static/chunks/8439.b3a427ee30ccef9b.js"
+      "static/chunks/node_modules_prismjs_components_prism-reason_js.js"
     ]
   },
   "../components/NotionPage.tsx -> prismjs/components/prism-rust.js": {
-    "id": 767,
+    "id": "../components/NotionPage.tsx -> prismjs/components/prism-rust.js",
     "files": [
-      "static/chunks/767.227b0541fff0ae9a.js"
+      "static/chunks/node_modules_prismjs_components_prism-rust_js.js"
     ]
   },
   "../components/NotionPage.tsx -> prismjs/components/prism-sass.js": {
-    "id": 9865,
+    "id": "../components/NotionPage.tsx -> prismjs/components/prism-sass.js",
     "files": [
-      "static/chunks/9865.a16825ca50321aca.js"
+      "static/chunks/node_modules_prismjs_components_prism-sass_js.js"
     ]
   },
   "../components/NotionPage.tsx -> prismjs/components/prism-scss.js": {
-    "id": 2447,
+    "id": "../components/NotionPage.tsx -> prismjs/components/prism-scss.js",
     "files": [
-      "static/chunks/2447.54f95eb2ee72c0d4.js"
+      "static/chunks/node_modules_prismjs_components_prism-scss_js.js"
     ]
   },
   "../components/NotionPage.tsx -> prismjs/components/prism-solidity.js": {
-    "id": 893,
+    "id": "../components/NotionPage.tsx -> prismjs/components/prism-solidity.js",
     "files": [
-      "static/chunks/893.e8a2689914e1e72b.js"
+      "static/chunks/node_modules_prismjs_components_prism-solidity_js.js"
     ]
   },
   "../components/NotionPage.tsx -> prismjs/components/prism-sql.js": {
-    "id": 5266,
+    "id": "../components/NotionPage.tsx -> prismjs/components/prism-sql.js",
     "files": [
-      "static/chunks/5266.2891cf215cd99695.js"
+      "static/chunks/node_modules_prismjs_components_prism-sql_js.js"
     ]
   },
   "../components/NotionPage.tsx -> prismjs/components/prism-stylus.js": {
-    "id": 4906,
+    "id": "../components/NotionPage.tsx -> prismjs/components/prism-stylus.js",
     "files": [
-      "static/chunks/4906.b64cebb984b99116.js"
+      "static/chunks/node_modules_prismjs_components_prism-stylus_js.js"
     ]
   },
   "../components/NotionPage.tsx -> prismjs/components/prism-swift.js": {
-    "id": 874,
+    "id": "../components/NotionPage.tsx -> prismjs/components/prism-swift.js",
     "files": [
-      "static/chunks/874.db241d45d7d9b52d.js"
+      "static/chunks/node_modules_prismjs_components_prism-swift_js.js"
     ]
   },
   "../components/NotionPage.tsx -> prismjs/components/prism-wasm.js": {
-    "id": 5774,
+    "id": "../components/NotionPage.tsx -> prismjs/components/prism-wasm.js",
     "files": [
-      "static/chunks/5774.1fc580e96fb7c4a4.js"
+      "static/chunks/node_modules_prismjs_components_prism-wasm_js.js"
     ]
   },
   "../components/NotionPage.tsx -> prismjs/components/prism-yaml.js": {
-    "id": 3358,
+    "id": "../components/NotionPage.tsx -> prismjs/components/prism-yaml.js",
     "files": [
-      "static/chunks/3358.a5a4bbbdd3ea5deb.js"
+      "static/chunks/node_modules_prismjs_components_prism-yaml_js.js"
     ]
   },
   "../components/NotionPage.tsx -> react-notion-x/build/third-party/code": {
-    "id": 1794,
+    "id": "../components/NotionPage.tsx -> react-notion-x/build/third-party/code",
     "files": [
-      "static/chunks/1794.860c6debe2e8c675.js"
+      "static/chunks/node_modules_react-notion-x_build_third-party_code_js.js"
     ]
   },
   "../components/NotionPage.tsx -> react-notion-x/build/third-party/collection": {
-    "id": 635,
+    "id": "../components/NotionPage.tsx -> react-notion-x/build/third-party/collection",
     "files": [
-      "static/chunks/3607272e.f0fd54e16cd14f06.js",
-      "static/chunks/5784.ec1b753255302773.js"
+      "static/chunks/node_modules_react-notion-x_build_third-party_collection_js.js"
     ]
   },
   "../components/NotionPage.tsx -> react-notion-x/build/third-party/equation": {
-    "id": 7274,
+    "id": "../components/NotionPage.tsx -> react-notion-x/build/third-party/equation",
     "files": [
-      "static/chunks/175675d1.31a80351ae9f5534.js",
-      "static/chunks/7274.711a7ced6b2ac032.js"
+      "static/chunks/node_modules_react-notion-x_build_third-party_equation_js.js"
     ]
   },
   "../components/NotionPage.tsx -> react-notion-x/build/third-party/modal": {
-    "id": 6873,
+    "id": "../components/NotionPage.tsx -> react-notion-x/build/third-party/modal",
     "files": [
-      "static/chunks/6873.fb27406f27b5af92.js"
+      "static/chunks/node_modules_react-notion-x_build_third-party_modal_js.js"
     ]
   },
   "../components/NotionPage.tsx -> react-notion-x/build/third-party/pdf": {
-    "id": 924,
+    "id": "../components/NotionPage.tsx -> react-notion-x/build/third-party/pdf",
     "files": [
-      "static/chunks/906a09f8.8735b6cced956c79.js",
-      "static/chunks/216.b79fa127a40e2246.js",
-      "static/chunks/5738.62ed1ab00444e2c9.js"
+      "static/chunks/node_modules_react-notion-x_build_third-party_pdf_js.js"
     ]
   }
 }
