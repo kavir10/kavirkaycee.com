@@ -464,11 +464,17 @@
   .notion-search-button {
     display: none !important;
   }
+  .notion-table {
+    width: 400px !important;
+    max-width: 400px !important;
+  }
   .notion-table-body {
     width: 400px !important;
   }
   .notion-table-view  {
     width: 400px !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
   }
   .notion-table-header-placeholder {
     width: 400px !important;
