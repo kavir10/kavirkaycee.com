@@ -56,8 +56,8 @@ export default siteConfig({
       pageId: '9cecccc56cca48839ceff3dc442e65f2'
     },    
     {
-      title: 'GPTs',
-      pageId: 'b890bb9f0f0b42e4ba2bcc927d91f26d'
+      title: 'Projects',
+      pageId: '7e24ec4b82004fbab4a68ccc02cbcf70'
     }
   ]
 })
