@@ -236,6 +236,20 @@
   display: none;
 }
 
+.notion-table {
+
+  width: 676px !important;  
+  max-width: 676px !important;
+
+}
+
+.notion-table-view {
+  width: 620px !important;  
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+
 .notion-table-header {
   display: none;
 }
@@ -467,6 +481,7 @@
   .notion-table {
     width: 400px !important;
     max-width: 400px !important;
+
   }
   .notion-table-body {
     width: 400px !important;
