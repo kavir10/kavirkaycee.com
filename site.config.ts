@@ -12,7 +12,7 @@ export default siteConfig({
   name: 'Kavir Kaycee',
   domain: 'kavirkaycee.com',
   author: 'Kavir Kaycee',
-  seotitle: 'Kavir Kaycee | Product Management',
+  seotitle: 'Kavir Kaycee | Product Manager, Startup Advisor, Writer',
 
   // open graph metadata (optional)
   description: 'Hi! I am Kavir, a Product Manager, Builder, Startup Advisor, and Writer. This is my small corner of the internet.',
