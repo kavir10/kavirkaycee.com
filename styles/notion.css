@@ -51,20 +51,6 @@ img[src^="data:image/svg+xml"][aria-hidden="true"] {
 }
 
 /* Ensure proper spacing for notion images when placeholders are hidden */
-.notion-asset-wrapper:not(:has(img:not([src^="data:image/svg+xml"]))) {
-  margin: 0 !important;
-  padding: 0 !important;
-  height: 0 !important;
-  overflow: hidden !important;
-}
-
-/* Ensure proper spacing for collection card covers when placeholders are hidden */
-.notion-collection-card-cover:not(:has(img:not([src^="data:image/svg+xml"]):not([src^="data:image/gif"]))) {
-  margin: 0 !important;
-  padding: 0 !important;
-  height: 0 !important;
-  overflow: hidden !important;
-}
 
 /**
  * This file contains site-specifc style overrides for Notion elements from
