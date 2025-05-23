@@ -452,6 +452,7 @@ img[src^="data:image/svg+xml"][aria-hidden="true"] {
 
 /* Ensure collection card cover images display properly */
 .notion-collection-card-cover img {
+  border-radius: 5px 5px 0px 0px;
   object-fit: cover !important;
   width: 100% !important;
   height: 100% !important;
@@ -540,6 +541,9 @@ img[src^="data:image/svg+xml"][aria-hidden="true"] {
 
 .notion-collection-card-cover img {
   border-radius: 5px 5px 0px 0px;
+  object-fit: cover !important;
+  width: 100% !important;
+  height: 100% !important;
 }
 
 .notion-collection-card {
