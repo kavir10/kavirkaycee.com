@@ -8,8 +8,13 @@ img[src^="data:image/svg+xml"][aria-hidden="true"] {
   display: none !important;
 }
 
-/* Hide image placeholders in notion collection card covers */
-.notion-gallery-grid .notion-collection-card-cover img[src^="data:image/svg+xml"] {
+/* Hide SVG image placeholders in collection card covers */
+.notion-collection-card-cover img[src^="data:image/svg+xml"] {
+  display: none !important;
+}
+
+/* Hide GIF image placeholders in collection card covers */
+.notion-collection-card-cover img[src^="data:image/gif"] {
   display: none !important;
 }
 
@@ -25,8 +30,13 @@ img[src^="data:image/svg+xml"][aria-hidden="true"] {
   display: none !important;
 }
 
-/* Hide intrinsic sizing containers in collection card covers that only contain placeholders */
-.notion-gallery-grid .notion-collection-card-cover > span:has(img[src^="data:image/svg+xml"]) {
+/* Hide intrinsic sizing containers in collection card covers that only contain SVG placeholders */
+.notion-collection-card-cover > span:has(img[src^="data:image/svg+xml"]) {
+  display: none !important;
+}
+
+/* Hide intrinsic sizing containers in collection card covers that only contain GIF placeholders */
+.notion-collection-card-cover > span:has(img[src^="data:image/gif"]) {
   display: none !important;
 }
 
@@ -36,7 +46,7 @@ img[src^="data:image/svg+xml"][aria-hidden="true"] {
 }
 
 /* Fallback for collection card covers without :has() support */
-.notion-gallery-grid .notion-collection-card-cover > span[style*="display: block"][style*="width: initial"][style*="height: initial"] {
+.notion-collection-card-cover > span[style*="display: block"][style*="width: initial"][style*="height: initial"] {
   display: none !important;
 }
 
@@ -49,7 +59,7 @@ img[src^="data:image/svg+xml"][aria-hidden="true"] {
 }
 
 /* Ensure proper spacing for collection card covers when placeholders are hidden */
-.notion-gallery-grid .notion-collection-card-cover:not(:has(img:not([src^="data:image/svg+xml"]))) {
+.notion-collection-card-cover:not(:has(img:not([src^="data:image/svg+xml"]):not([src^="data:image/gif"]))) {
   margin: 0 !important;
   padding: 0 !important;
   height: 0 !important;
@@ -442,7 +452,7 @@ img[src^="data:image/svg+xml"][aria-hidden="true"] {
 }
 
 /* Fix for Next.js Image with intrinsic sizing in collection card covers */
-.notion-gallery-grid .notion-collection-card-cover img[data-nimg="intrinsic"] {
+.notion-collection-card-cover img[data-nimg="intrinsic"] {
   object-fit: cover !important;
   position: absolute !important;
   inset: 0 !important;
@@ -455,17 +465,26 @@ img[src^="data:image/svg+xml"][aria-hidden="true"] {
 }
 
 /* Ensure collection card cover images display properly */
-.notion-gallery-grid .notion-collection-card-cover img {
+.notion-collection-card-cover img {
   object-fit: cover !important;
   width: 100% !important;
   height: 100% !important;
 }
 
 /* Fix for collection card cover spans with Next.js Image */
-.notion-gallery-grid .notion-collection-card-cover > span {
+.notion-collection-card-cover > span {
   position: relative !important;
   display: block !important;
   width: 100% !important;
+  height: 100% !important;
+}
+
+/* Override inline styles that set width/height to 0 in collection card covers */
+.notion-collection-card-cover img[style*="width: 0"] {
+  width: 100% !important;
+}
+
+.notion-collection-card-cover img[style*="height: 0"] {
   height: 100% !important;
 }
 
