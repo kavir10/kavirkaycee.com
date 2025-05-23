@@ -44,7 +44,7 @@
 }
 
 .footer {
-  width: 647px;
+  width: 720px;
   max-width: 100%;
   margin: auto auto 0;
   padding: 8px;
@@ -122,6 +122,9 @@
 @media only screen and (max-width: 566px) {
   .footer {
     flex-direction: column;
+    width: 100%;
+    padding-left: 3vw;
+    padding-right: 3vw;
   }
 
   .footer > div {
@@ -136,6 +139,14 @@
   }
   .footer .copyright {
     order: 3;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .footer {
+    width: 100%;
+    padding-left: 3vw;
+    padding-right: 3vw;
   }
 }
 

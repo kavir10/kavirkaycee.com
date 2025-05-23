@@ -6,7 +6,6 @@
  */
 
 import { parsePageId } from 'notion-utils'
-import posthog from 'posthog-js'
 import { getEnv, getSiteConfig } from './get-config-value'
 import { NavigationLink } from './site-config'
 import {
@@ -112,10 +111,29 @@ export const isRedisEnabled: boolean =
 export const redisHost: string | null = getEnv('REDIS_HOST', null)
 export const redisPassword: string | null = getEnv('REDIS_PASSWORD', null)
 export const redisUser: string = getEnv('REDIS_USER', 'default')
-export const redisUrl = getEnv(
-  'REDIS_URL',
-  `redis://${redisUser}:${redisPassword}@${redisHost}`
-)
+
+// Smart Redis URL construction that handles both hostname:port and hostname formats
+function buildRedisUrl(): string {
+  if (!redisHost || !redisPassword) {
+    return ''
+  }
+  
+  // Remove quotes if present in environment variables
+  const cleanHost = redisHost.replace(/^['"]|['"]$/g, '')
+  const cleanPassword = redisPassword.replace(/^['"]|['"]$/g, '')
+  const cleanUser = redisUser.replace(/^['"]|['"]$/g, '')
+  
+  // If REDIS_HOST already contains a port (like Redis Cloud format), use it directly
+  if (cleanHost.includes(':')) {
+    return `redis://${cleanUser}:${cleanPassword}@${cleanHost}`
+  }
+  
+  // Otherwise, construct with separate port if provided
+  const redisPort = getEnv('REDIS_PORT', '6379')
+  return `redis://${cleanUser}:${cleanPassword}@${cleanHost}:${redisPort}`
+}
+
+export const redisUrl = getEnv('REDIS_URL', buildRedisUrl())
 export const redisNamespace: string | null = getEnv(
   'REDIS_NAMESPACE',
   'preview-images'
@@ -154,7 +172,7 @@ export const fathomConfig = fathomId
   : undefined
 
 export const posthogId = process.env.NEXT_PUBLIC_POSTHOG_ID
-export const posthogConfig: posthog.Config = {
+export const posthogConfig = {
   api_host: 'https://app.posthog.com'
 }
 

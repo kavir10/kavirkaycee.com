@@ -61,3 +61,49 @@ I didn't create the original React renderer. You can fork the wr8 repo and do wh
     <img src="https://img.shields.io/github/followers/verfasor?label=verfasor&logo=GitHub&style=social" />
 </a>  
 </p>
+
+## Redis Configuration and Troubleshooting
+
+### Redis Setup
+This project supports Redis for caching preview images. To enable Redis:
+
+1. **Enable Redis in site.config.ts:**
+   ```typescript
+   isRedisEnabled: true
+   ```
+
+2. **Configure Redis credentials in .env:**
+   ```env
+   REDIS_HOST=your-redis-host.com:port
+   REDIS_PASSWORD=your-redis-password
+   REDIS_USER=default
+   REDIS_NAMESPACE=preview-images
+   ```
+
+### Redis Cloud Configuration
+For Redis Cloud (RedisLabs), your configuration should look like:
+```env
+REDIS_HOST=redis-12345.c123.region.ec2.cloud.redislabs.com:12345
+REDIS_PASSWORD=your-actual-password
+REDIS_USER=default
+```
+
+### Troubleshooting Redis Authentication Errors
+
+If you see `WRONGPASS invalid username-password pair` errors:
+
+1. **Verify credentials:** Double-check your Redis password and username in your Redis Cloud dashboard
+2. **Check host format:** Ensure REDIS_HOST includes the port (e.g., `hostname:port`)
+3. **Test connection:** Use a Redis CLI tool to test the connection:
+   ```bash
+   redis-cli -h hostname -p port -a password ping
+   ```
+4. **Temporary disable:** Set `isRedisEnabled: false` in site.config.ts to run without Redis
+
+### Environment Variables
+The application supports these Redis environment variables:
+- `REDIS_HOST` - Redis hostname with port (required)
+- `REDIS_PASSWORD` - Redis password (required)  
+- `REDIS_USER` - Redis username (default: "default")
+- `REDIS_NAMESPACE` - Key namespace (default: "preview-images")
+- `REDIS_URL` - Complete Redis URL (optional, overrides above)

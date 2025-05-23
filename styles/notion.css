@@ -1,3 +1,38 @@
+/* Hide Next.js intrinsic image placeholder SVGs that cause blank images */
+img[src^="data:image/svg+xml"][aria-hidden="true"] {
+  display: none !important;
+}
+
+/* Hide image placeholders in notion asset wrappers */
+.notion-asset-wrapper img[src^="data:image/svg+xml"] {
+  display: none !important;
+}
+
+/* Hide any SVG placeholders that might appear in notion content */
+.notion img[src^="data:image/svg+xml"],
+.notion-image img[src^="data:image/svg+xml"],
+.notion-asset img[src^="data:image/svg+xml"] {
+  display: none !important;
+}
+
+/* Hide intrinsic sizing containers that only contain placeholders */
+.notion-asset-wrapper > span:has(img[src^="data:image/svg+xml"]) {
+  display: none !important;
+}
+
+/* Fallback for browsers without :has() support - hide empty looking spans */
+.notion-asset-wrapper > span[style*="display: block"][style*="width: initial"][style*="height: initial"] {
+  display: none !important;
+}
+
+/* Ensure proper spacing for notion images when placeholders are hidden */
+.notion-asset-wrapper:not(:has(img:not([src^="data:image/svg+xml"]))) {
+  margin: 0 !important;
+  padding: 0 !important;
+  height: 0 !important;
+  overflow: hidden !important;
+}
+
 /**
  * This file contains site-specifc style overrides for Notion elements from
  * react-notion-x.
@@ -103,9 +138,12 @@
 }
 
 .notion-page {
+  width: 720px;
+  max-width: 100%;
   padding-left: 0px;
   padding-right: 0px;
-  width: 720px;
+  padding-bottom: calc(max(5vh, 32px)) !important;
+  line-height: 1.65;
 }
 
 /* hides the title from index page */
@@ -128,7 +166,16 @@
 }
 
 .notion > * {
-  padding: 0px 0;
+  /* padding: 0px 0; - REMOVED: This was causing cramped content spacing */
+}
+
+/* Add proper spacing for content elements */
+.notion-block {
+  margin-bottom: 0.5em;
+}
+
+.notion-block:last-child {
+  margin-bottom: 0;
 }
 
 .notion-header .notion-nav-header {
@@ -202,11 +249,9 @@
 @media (max-width: 767px) {
 
 .dark-mode .notion-header {
-  background: #22252A !important !important;
+  background: #22252A !important;
   box-shadow: none !important;
 }
-
-
 
 .notion-header {
   background: white !important;
@@ -329,11 +374,6 @@
   display: none;
 }
 
-.notion-page {
-  padding-bottom: calc(max(5vh, 32px)) !important;
-  line-height: 1.65;
-}
-
 .index-page {
   --notion-max-width: 676px;
 }
@@ -350,6 +390,46 @@
 .notion-asset-wrapper {
   margin-top: 1em;
   margin-bottom: 1em;
+  position: relative;
+}
+
+/* Fix for Next.js Image component cropping */
+.notion-asset-wrapper .medium-zoom-image {
+  object-fit: contain !important;
+  position: relative !important;
+  width: 100% !important;
+  height: auto !important;
+  min-width: unset !important;
+  max-width: 100% !important;
+  min-height: unset !important;
+  max-height: unset !important;
+}
+
+/* Additional fix for Next.js Image with intrinsic sizing */
+.notion-asset-wrapper img[data-nimg="intrinsic"] {
+  object-fit: contain !important;
+  position: relative !important;
+  inset: unset !important;
+  width: 100% !important;
+  height: auto !important;
+  min-width: unset !important;
+  max-width: 100% !important;
+  min-height: unset !important;
+  max-height: unset !important;
+}
+
+/* Comprehensive fix for all image cropping issues in notion content */
+.notion img,
+.notion-image img,
+.notion-asset img {
+  object-fit: contain !important;
+}
+
+/* Ensure proper container behavior for image assets */
+.notion-asset-wrapper > div {
+  position: relative !important;
+  width: 100% !important;
+  height: auto !important;
 }
 
 .notion-asset-wrapper-video > div,
@@ -483,7 +563,14 @@
   }
   .notion-page-icon-hero.notion-page-icon-image {
     margin-left: -32px;
-}
+  }
+  
+  /* Ensure footer width matches content on mobile */
+  .footer {
+    width: 100%;
+    padding-left: 3vw;
+    padding-right: 3vw;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -567,6 +654,9 @@
 
 .notion-asset-wrapper img {
   border-radius: 18px;
+  object-fit: contain !important;
+  width: 100% !important;
+  height: auto !important;
 }
 
 .notion-page-cover-wrapper,
