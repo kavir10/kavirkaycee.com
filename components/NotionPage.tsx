@@ -86,7 +86,15 @@ const Equation = dynamic(() =>
   import('react-notion-x/build/third-party/equation').then((m) => m.Equation)
 )
 const Pdf = dynamic(
-  () => import('react-notion-x/build/third-party/pdf').then((m) => m.Pdf),
+  async () => {
+    const [{ Pdf: NotionPdf }, { pdfjs }] = await Promise.all([
+      import('react-notion-x/build/third-party/pdf'),
+      import('react-pdf')
+    ])
+    // PDF.js 4 workers use an ES module; match the worker to the patched parser.
+    pdfjs.GlobalWorkerOptions.workerSrc = `https://unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.mjs`
+    return NotionPdf
+  },
   {
     ssr: false
   }
